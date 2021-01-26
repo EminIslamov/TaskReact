@@ -59,17 +59,13 @@ function Task () {
  и вернет сумму этих значений.*/
 
 
-  const thirdArr = elements.find(item => {
-    if (item.a === item.b) {
-      return item.a + item.b
-    }
-  })
+  const thirdArr = elements.find(item => item.a === item.b)
 
   console.log(thirdArr.a + thirdArr.b)
 
   return (
     <div>
-      {newArr}
+      [{newArr.join(',')}]
     </div>
   )
 }
